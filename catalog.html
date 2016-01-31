@@ -1,32 +1,33 @@
 <!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-  </head>
+   </head>
   <body>
     <header class="main-header"> 
-    <div class="container">
-      <div class="index-logo">
+      <div class="container">
+       <div class="index-logo">
         <img src="http://placehold.it/150x100" alt="Nerds">
-        </div>
-        <nav class="main-navigation">
+         </div>
+       <nav class="main-navigation">
           <ul>
             <li>
               <a href="#">Студия</a>
-            </li>
+             </li>
             <li>
               <a href="#">Клиенты</a>
-            </li>
+             </li>
             <li>
               <a href="#">Магазин</a>
-            </li>
+             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
           </ul>
-          </nav>
-        <div class="user-block">
+        </nav>
+         <div class="user-block">
           <a class="cart" href="#">Корзина</a>
         </div>
         <h1>Добро пожаловать в магазин готовых макетов</h1>
@@ -35,57 +36,62 @@
       </header>
       
        <div class="container">
-       <div class="catalog-form">
+        <div class="catalog-form">
          <h2>Стоимость</h2>
            
+    <aside class="catalog-form">
+     <form action="#" method="post">  
+      <fieldset>
+       <legend>Стоимость</legend>
         <div class="range">
-        <div class="scale"> 
-          <div class="bar"></div> 
-        </div>
+         <div class="scale"> 
+          <div class="bar">
+        </div> 
+       </div>
         
         <div class="toggle toggle-min"></div> 
         <div class="toggle toggle-max"></div> 
       </div>
-           
-        <form action="#" method="post">
-          <input type="text" name="text-form-from" id="form-from-field">
-        <label for="form-from-field">От</label>
-          <input type="text" name="text-form-to" id="form-to-field">
-        <label for="form-to-field">До</label>
-         
-          <h2>Сетка:</h2>
-          <label>
-           <input type="radio" name="network" value="adapted">Адаптивная
-           </label>
-          <br>
-          <label>
-           <input type="radio" name="network" value="fix">Фиксированная 
-           </label>
-          <br>
-          <label>
-           <input type="radio" name="network" value="stretch">Резиновая
-           </label>
-          
-         <h2>Особенности:</h2>
-         
-         <input type="checkbox" name="slider" id="sliders-field" checked>
-         <label for="sliders-field">Слайдер</label> 
-         <br>
-          <input type="checkbox" name="block" id="block-field">
-         <label for="block-field">Блок преимуществ</label>
-         <br>
-          <input type="checkbox" name="news" id="news-field" checked>
-         <label for="news-field">Новости</label>
-         <br>
-          <input type="checkbox" name="gallery" id="gallery-field">
-         <label for="gallery-field">Галерея</label>
-         <br>
-          <input type="checkbox" name="cart" id="cart-field">
-         <label for="cart-field">Корзина</label>
-         <br>
-        <input type="submit" value="Показать" class="submit-btn">  
-        </form>
-        </div>
+      
+      <label for="form-from-field">От</label>
+      <input type="text" name="text-form-from" id="form-from-field">
+      <label for="form-to-field">До</label>      
+      <input type="text" name="text-form-to" id="form-to-field">
+    </fieldset>
+    
+    <fieldset>
+      <legend>Сетка:</legend>
+        
+     <label>
+        <input type="radio" name="network" value="adapted">Адаптивная
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="network" value="fix">Фиксированная 
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="network" value="stretch">Резиновая
+      </label>
+    </fieldset>
+        
+    <fieldset>
+        <legend>Особенности:</legend>
+
+      <input type="checkbox" name="slider" id="sliders-field" checked>
+        <label for="sliders-field">Слайдер</label> 
+      <input type="checkbox" name="block" id="block-field">
+        <label for="block-field">Блок преимуществ</label>
+      <input type="checkbox" name="news" id="news-field" checked>
+        <label for="news-field">Новости</label>
+      <input type="checkbox" name="gallery" id="gallery-field">
+        <label for="gallery-field">Галерея</label>
+      <input type="checkbox" name="cart" id="cart-field">
+        <label for="cart-field">Корзина</label>
+     </fieldset>
+    <input type="submit" value="Показать" class="submit-btn">  
+  </form>
+ </aside>
         
         <div class="sort-catalog">
           Сортировать:
@@ -120,7 +126,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 1">
+           <img src="#" alt="Пример макета 1">
         <div class="item-description">
           <b>Aviator</b>
           <p>Одностраничный макет с авторским дизайном</p>
@@ -134,7 +140,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 2">
+           <img src="#" alt="Пример макета 2">
         <div class="item-description">
           <b>Sunset</b>
           <p>Интернет-магазин с личным кабинетом</p>
@@ -148,7 +154,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 3">
+           <img src="#" alt="Пример макета 3">
         <div class="item-description">
           <b>Forte</b>
           <p>Отличный макет для личного блога</p>
@@ -162,7 +168,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 4">
+           <img src="#" alt="Пример макета 4">
         <div class="item-description">
           <b>Modern Organic Thai</b>
           <p>Сайт для ресторана быстрого питания</p>
@@ -176,7 +182,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 5">
+           <img src="#" alt="Пример макета 5">
         <div class="item-descriptionr">
           <b>Avenue</b>
           <p>Макет для блога о путешествиях</p>
@@ -190,7 +196,7 @@
             <li></li>
             <li></li>
            </ul> 
-         <img src="#" alt="Пример макета 6">
+           <img src="#" alt="Пример макета 6">
         <div class="item-description">
           <b>Dovetail</b>
           <p>Интернет-магазин с галереейй товаров</p>
@@ -199,9 +205,8 @@
          </div>
            </div>
         
-       <div class="catalog-pages">
-          <ul>
-              <li> <a class="btn" href="#">1</a>
+          <ul class="pagination">
+              <li> <a class="btn active" href="#">1</a>
               </li>
                <li> <a class="btn" href="#">2</a>
               </li>
@@ -211,21 +216,13 @@
               </li>
           </ul>
        </div>
-       </div>
+      </div>
          
           
-        
-         
-         
-        
-         
-        
-        
-        
-        
-             <div class="map"> 
-        <div class="canvas-map"></div>
-        </div>
+       <div class="map"> 
+         <div class="canvas-map">
+           </div>
+         </div>
         
         <div class="contacts">
           <h2>NERDS DESIGN STUDIO</h2>
@@ -240,8 +237,8 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-          </div>
+        </div>
+       </div>
           
           <div class="promo-text"> 
           <b>Давайте дружить, это выгодно!</b>
@@ -250,4 +247,7 @@
       </footer>
          
      </body>
-     </html>
+    </html>
+
+
+
