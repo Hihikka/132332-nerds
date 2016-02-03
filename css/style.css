@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto";
+  color:#283136;
+  font-size: 16px;
+  font-weight:medium;
+  line-height: 22px;
+  }
+
+h1 {
+  font-family: "Roboto";
+  color: #000000;
+  font-size: 40px;
+  font-weight:medium;
+  line-height: 49px;
+}
+
+h2 {
+  font-family: "Roboto";
+  color: #000000;
+  font-size: 18px;
+  font-weight:medium;
+  line-height: 30px;
+}
+
+.index-content-title {
+  font-family:"Roboto";
+  color: #000000;
+  font-size: 36px;
+  font-weight:medium;
+  line-height: 36px;
+}
+
+legend {
+  font-family:"Roboto";
+  color: #000000;
+  font-size: 18px;
+  font-weight:medium;
+  line-height: 30px;
+}
