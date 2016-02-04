@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", "Verdana", sans-serif;
   color:#283136;
   font-size: 16px;
   font-weight:medium;
@@ -7,7 +7,7 @@ body {
   }
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Roboto", "Verdana", sans-serif;
   color: #000000;
   font-size: 40px;
   font-weight:medium;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", "Verdana", sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight:medium;
@@ -23,7 +23,7 @@ h2 {
 }
 
 .index-content-title {
-  font-family:"Roboto";
+  font-family:"Roboto", "Verdana", sans-serif;
   color: #000000;
   font-size: 36px;
   font-weight:medium;
@@ -31,7 +31,7 @@ h2 {
 }
 
 legend {
-  font-family:"Roboto";
+  font-family:"Roboto", "Verdana", sans-serif;
   color: #000000;
   font-size: 18px;
   font-weight:medium;
