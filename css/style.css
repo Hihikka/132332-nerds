@@ -12,6 +12,10 @@ h1 {
   font-size: 40px;
   font-weight:normal;
   line-height: 49px;
+  background: lightgreen;
+}
+
+.catalog-title {
   display: inline-block;
   vertical-align: top;
   width: 660px;
@@ -46,7 +50,6 @@ legend {
 }
 
 
-
 .container{
   width:880px;
   padding: 0px 10px;
@@ -55,7 +58,7 @@ legend {
 }
 
 .main-header{
-  min-height:440px;
+
 }
 
 
@@ -71,7 +74,7 @@ legend {
   width: 560px;
   min-height: 80px;
   margin-top:0px;
-  background: lightgrey;
+  background: lightgreen;;
 }
 
 .index-menu {
@@ -79,7 +82,7 @@ legend {
   vertical-align: top;
   width: 100px;
   min-height: 0px;
-  background: grey;
+  background: lightgrey;
   margin-top: 40px;
 }
 
@@ -87,14 +90,15 @@ legend {
   float: right;
   width: 130px;
   min-height: 80px;
-  background: lightgrey;
+  background: lightgreen;
 }
+
 
 .cart{
   float: right;
   width: 130px;
   min-height: 0px;
-  background: grey;
+  background: lightgrey;
   margin-top: 55px;
   margin-bottom: 15px;
 }
@@ -132,27 +136,54 @@ aside {
   width: 240px;
   min-height: 740px;
   margin-top: 80px;
+  background: lightgreen;
 }
 
+.catalog-conteiner{
+  font-size: 0px;
+}
+
+.sort-catalog-list{
+
+
+}
+
+
 .sort-catalog{
-  float: right;
-  width: 560px;
-  min-height: 100px;
+  display: inline-block;
+  vertical-align: top;
+  width: 320px;
+  min-height: 20px;
+  background: grey;
+  font-size: 16px;
+}
+
+.sort {
+  display:inline-block;
+  vertical-align: top;
+  width: 40px;
+  min-height: 30px;
   background: lightgrey;
 }
 
-.sort{
-  display:inline-block;
-  vertical-align: top;
-  width: 560px;
-  min-height: 25px;
+
+.catalog-container{
+  float: right;
+  width: 570px;
+  min-height: 1160;
+  background: green;
 }
 
-.catalog{
+.catalog {
+  min-height: 1280px;
+}
+
+.catalog-list{
   float: right;
   width: 560px;
   min-height: 1090px;
   background: lightgreen;
+
 }
 
 .catalog-item{
@@ -163,13 +194,14 @@ aside {
 }
 
 .catalog-item:nth-child(2n){
-  margin-left: 70px;
+  margin-left: 74px;
 }
 
 
 
 .content-title{
   min-height: 475px;
+  background: lightgreen;
 }
 
 
@@ -180,7 +212,8 @@ aside {
   min-height: 360px;
   margin-top: 55px;
   margin-bottom: 70px;
-  background: green;
+  background: lightgreen;
+
 }
 
 .index-content-right{
@@ -189,7 +222,7 @@ aside {
   min-height: 360px;
   margin-top: 55px;
   margin-bottom: 70px;
-  background: green;
+  background: lightgreen;
 }
 
 .index-logo{
@@ -207,8 +240,9 @@ aside {
 .pagination{
   display: inline-block;
   vertical-align: top;
-  width: 290px;
-  min-height: 40px;
+  width: 300px;
+  height: 50px;
+  background: lightgrey;
 }
 
 .partners {
@@ -224,7 +258,7 @@ aside {
   width: 210px;
   min-height: 100px;
   margin-right:115px;
-  background: yellow;
+  background: lightgreen;
 }
 .partner-logo:last-child{
   margin-right: 0px;
@@ -265,6 +299,7 @@ footer{
   min-height: 70px;
   padding-bottom: 70px;
   padding-top: 70px;
+  background: lightgreen;
 }
 
 
