@@ -58,7 +58,6 @@ legend {
 }
 
 .main-header{
-
 }
 
 
@@ -112,9 +111,7 @@ legend {
 
 
 .services {
-  float: left;
   width: 880px;
-  min-height: 460px;
 }
 
 .service {
@@ -134,8 +131,6 @@ legend {
 aside {
   float:left;
   width: 240px;
-  min-height: 740px;
-  margin-top: 80px;
   background: lightgreen;
 }
 
@@ -143,45 +138,41 @@ aside {
   font-size: 0px;
 }
 
-.sort-catalog-list{
-
-
-}
-
-
-.sort-catalog{
+.sort-catalog-list li {
   display: inline-block;
   vertical-align: top;
-  width: 320px;
-  min-height: 20px;
+}
+
+.sort-catalog {
+  display: inline-block;
+  vertical-align: top;
   background: grey;
   font-size: 16px;
 }
 
-.sort {
-  display:inline-block;
+.sort-catalog li{
+  display: inline-block;
   vertical-align: top;
-  width: 40px;
-  min-height: 30px;
-  background: lightgrey;
 }
 
+.sort {
+  display: inline-block;
+  vertical-align: top;
+  background: lightgreen;
+}
 
 .catalog-container{
   float: right;
   width: 570px;
-  min-height: 1160;
   background: green;
 }
 
 .catalog {
-  min-height: 1280px;
 }
 
 .catalog-list{
   float: right;
   width: 560px;
-  min-height: 1090px;
   background: lightgreen;
 
 }
@@ -197,7 +188,10 @@ aside {
   margin-left: 74px;
 }
 
-
+.catalog-item-list li {
+  display: inline-block;
+  vertical-align: top;
+}
 
 .content-title{
   min-height: 475px;
@@ -205,11 +199,9 @@ aside {
 }
 
 
-
 .index-content-left{
   float: left;
   width: 620px;
-  min-height: 360px;
   margin-top: 55px;
   margin-bottom: 70px;
   background: lightgreen;
@@ -219,7 +211,6 @@ aside {
 .index-content-right{
   float: right;
   width: 240px;
-  min-height: 360px;
   margin-top: 55px;
   margin-bottom: 70px;
   background: lightgreen;
@@ -229,26 +220,27 @@ aside {
   float:left;
   width: 190px;
   min-height: 75px;
-
 }
 
 .right-content-list{
   margin-bottom: 70px;
-
 }
 
-.pagination{
+.pagination {
+  display: inline-block;
+  margin-top: 75px;
+}
+
+.pagination li{
   display: inline-block;
   vertical-align: top;
-  width: 300px;
-  height: 50px;
   background: lightgrey;
 }
 
 .partners {
-  float: left;
   width: 880px;
   min-height: 170px;
+  font-size: 0px;
 }
 
 
@@ -265,11 +257,11 @@ aside {
 }
 
 footer{
-  min-height: 720px;
+
 }
 
 .main-footer {
-  min-height: 720px;
+
 }
 
 .map {
@@ -280,8 +272,6 @@ footer{
   float: left;
   width: 250px;
   min-height: 240px;
-  margin-bottom:;
-  margin-top:;
 }
 
 .social-links{
@@ -290,7 +280,6 @@ footer{
   min-height:70px;
   padding-bottom: 70px;
   padding-top: 70px;
-
 }
 
 .promo-text{
@@ -301,9 +290,6 @@ footer{
   padding-top: 70px;
   background: lightgreen;
 }
-
-
-
 
 
 
