@@ -48,6 +48,8 @@ legend {
 }
 
 .main-header {
+  padding-bottom: 75px;
+  background: lightgrey;
 }
 
 
@@ -66,7 +68,7 @@ legend {
 
 .catalog-title {
   width: 660px;
-  margin: 0 auto 75px auto;
+  margin: 0 auto;
   text-align: center;
   background: green;
 }
