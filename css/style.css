@@ -15,13 +15,6 @@ h1 {
   background: lightgreen;
 }
 
-.catalog-title {
-  width: 670px;
-  min-height: 80px;
-  margin: 75px auto 85px auto;
-  text-align: center;
-}
-
 h2 {
   font-family: "Roboto", "Verdana", sans-serif;
   color: #000000;
@@ -54,45 +47,49 @@ legend {
   background: lightyellow;
 }
 
-.main-header{
+.main-header {
 }
 
 
-.index-logo{
+.index-logo {
   float: left;
   width: 140px;
   height: 56px;
   margin-top: 25px;
 }
 
-.main-navigation{
+.main-navigation {
   float: left;
   width: 560px;
-  margin-top:0px;
   background: lightgreen;;
+}
+
+.catalog-title {
+  width: 660px;
+  margin: 0 auto 75px auto;
+  text-align: center;
+  background: green;
 }
 
 .index-menu {
   display: inline-block;
   vertical-align: top;
   width: 100px;
-  min-height: 0px;
   background: lightgrey;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .user-block{
   float: right;
   width: 130px;
-  min-height: 80px;
   background: lightgreen;
 }
 
 
-.cart{
+.cart {
   float: right;
   width: 130px;
-  min-height: 0px;
   background: lightgrey;
   margin-top: 55px;
   margin-bottom: 15px;
@@ -101,28 +98,25 @@ legend {
 
 .slider {
   width: 880px;
-  min-height: 320px;
   text-align: left;
   margin: 0 auto;
   background: lightgrey;
 }
 
 .slide {
-  width: 470px;
   background: lightgreen;
 }
 
 .services {
   width: 880px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .service {
   float: left;
-  min-height: 300px;
   width: 240px;
   margin-right: 80px;
-  margin-bottom: 80px;
-  margin-top: 80px;
   background: lightgreen;
 }
 
@@ -136,7 +130,7 @@ aside {
   background: lightgreen;
 }
 
-.catalog-conteiner{
+.catalog-conteiner {
   font-size: 0px;
 }
 
@@ -152,7 +146,7 @@ aside {
   font-size: 16px;
 }
 
-.sort-catalog li{
+.sort-catalog li {
   display: inline-block;
   vertical-align: top;
 }
@@ -163,36 +157,36 @@ aside {
   background: lightgreen;
 }
 
-.sort-up-down{
+.sort-up-down {
   display: inline-block;
   vertical-align: top;
   background: lightgreen;
 }
 
-.catalog-container{
+.catalog-container {
   float: right;
-  width: 570px;
+  width: 560px;
   background: green;
 }
 
 .catalog {
+  padding-top: 75px;
 }
 
-.catalog-list{
+.catalog-list {
   float: right;
   width: 560px;
   background: lightgreen;
-
 }
 
-.catalog-item{
+.catalog-item {
   display: inline-block;
   vertical-align:top;
   width: 240px;
   min-height: 270px;
 }
 
-.catalog-item:nth-child(2n){
+.catalog-item:nth-child(2n) {
   margin-left: 74px;
 }
 
@@ -201,45 +195,38 @@ aside {
   vertical-align: top;
 }
 
-.content-title{
-  min-height: 475px;
+.main-content {
   background: lightgreen;
+  padding-bottom: 70px;
+  padding-top: 55px;
 }
 
 
-.index-content-left{
+.index-content-left {
   float: left;
   width: 620px;
-  margin-top: 55px;
-  margin-bottom: 70px;
   background: lightgreen;
-
 }
 
-.index-content-right{
+.index-content-right {
   float: right;
   width: 240px;
-  margin-top: 55px;
-  margin-bottom: 70px;
   background: lightgreen;
 }
 
-.index-logo{
-  float:left;
-  width: 190px;
-  min-height: 75px;
-}
 
-.right-content-list{
+.right-content-list {
   margin-bottom: 70px;
 }
 
 .pagination {
   display: inline-block;
+  width: 320px;
   margin-top: 75px;
+  margin-bottom: 70px;
 }
 
-.pagination li{
+.pagination li {
   display: inline-block;
   vertical-align: top;
   background: lightgrey;
@@ -251,29 +238,25 @@ aside {
   font-size: 0px;
 }
 
-
-.partner-logo{
+.partner-logo {
   display: inline-block;
   vertical-align: top;
   width: 210px;
-  min-height: 100px;
   margin-right:115px;
-  background: lightgreen;
+  background: lightgrey;
 }
 .partner-logo:last-child{
   margin-right: 0px;
 }
 
-footer{
-
+footer {
 }
 
 .main-footer {
-
 }
 
 .map {
-  min-height: 418px;
+height: 416px;
 }
 
 .contacts {
@@ -282,26 +265,25 @@ footer{
   min-height: 240px;
 }
 
-.social-links{
+.social-links {
   float: left;
   width:310px;
-  min-height:70px;
   padding-bottom: 70px;
   padding-top: 70px;
 }
 
-.promo-text{
+.promo-text {
   float: left;
   width: 570px;
-  min-height: 70px;
   padding-bottom: 70px;
   padding-top: 70px;
   background: lightgreen;
+  text-align: left;
 }
 
 
 
-.clearfix::after{
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
