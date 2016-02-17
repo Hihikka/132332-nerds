@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic,latin' rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -34,7 +36,38 @@
 
 
         <div class="slider">
-          <div class="slider-radio-btn">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+        <div class="slider-controls">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-text">
+              <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+          <!--<div class="slider-radio-btn">
             <input type="radio" name="slide">
             <input type="radio" name="slide">
             <input type="radio" name="slide">
@@ -54,7 +87,7 @@
             <b>Только наркотики, только хардкор!</b>
             <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
             <a class="btn" href="#">Узнать больше</a>
-          </section>
+          </section>-->
         </div>
     </header>
 
@@ -82,7 +115,7 @@
 
       <div class="main-content clearfix">
         <div class="index-content-left">
-          <h1 class="index-content-title">Мы-маленькая, но гордая студия из Краснодара.</h1>
+          <h1 class="index-content-title">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</h1>
           <p class="content-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
 
           <h2>Выполняем заказы на разработку:</h2>
@@ -127,8 +160,8 @@
         <div class="canvas-map"></div>
 
         <div class="contacts">
-          <h2>NERDS DESIGN STUDIO</h2>
-          <p class="contacs-adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная д.19/8 </p>
+          <h2>NЁRDS DESIGN STUDIO</h2>
+          <p class="contacs-adress"> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная д.19/8 </p>
           <p class="contacs-tel">тел. +7(812)275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
@@ -136,9 +169,9 @@
 
       <div class="container clearfix">
         <div class="social-links">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
         </div>
 
         <div class="promo-text">

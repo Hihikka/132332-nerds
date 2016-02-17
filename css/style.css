@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   font-weight:normal;
   line-height: 22px;
+  min-width: 900px;
   }
 
 h1 {
@@ -12,7 +13,6 @@ h1 {
   font-size: 40px;
   font-weight:normal;
   line-height: 49px;
-  background: lightgreen;
 }
 
 h2 {
@@ -21,6 +21,7 @@ h2 {
   font-size: 18px;
   font-weight:normal;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .index-content-title {
@@ -39,19 +40,16 @@ legend {
   line-height: 30px;
 }
 
-
 .container{
   width:880px;
   padding: 0px 10px;
   margin: 0 auto;
-  background: lightyellow;
 }
 
 .main-header {
   padding-bottom: 75px;
-  background: lightgrey;
+  background: #eeeeee;
 }
-
 
 .index-logo {
   float: left;
@@ -63,50 +61,213 @@ legend {
 .main-navigation {
   float: left;
   width: 560px;
-  background: lightgreen;;
 }
 
 .catalog-title {
   width: 660px;
   margin: 0 auto;
   text-align: center;
-  background: green;
 }
 
 .index-menu {
   display: inline-block;
   vertical-align: top;
   width: 100px;
-  background: lightgrey;
   margin-top: 40px;
   margin-bottom: 50px;
+  font-size: 0px;
+}
+
+.main-navigation a {
+  display: block;
+  color:#283136;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: #8f8f8f;
 }
 
 .user-block{
   float: right;
   width: 130px;
-  background: lightgreen;
 }
 
 
 .cart {
-  float: right;
   width: 130px;
-  background: lightgrey;
   margin-top: 55px;
   margin-bottom: 15px;
+  display: block;
+  color:#283136;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
 }
 
+.cart:hover {
+  color: #fb565a;
+}
+
+.cart:active {
+  color: #8f8f8f;
+}
 
 .slider {
+  position: relative;
+
   width: 880px;
-  text-align: left;
+  min-height: 310px;
   margin: 0 auto;
-  background: lightgrey;
+  overflow: hidden;
 }
 
 .slide {
-  background: lightgreen;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 310px;
+
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+
+  -webkit-transition: left 0.3s ease;
+     -moz-transition: left 0.3s ease;
+          transition: left 0.3s ease;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  z-index: 10;
+
+  width: 200px;
+  margin-left: -100px;
+
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
+
+.slide-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+
+.slide .btn {
+  display: inline-block;
+  width: 220px;
+  margin-top: 25px;
+  padding: 12px 10px;
+
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #fb565a;
+  border-radius: 4px;
+}
+
+.slide .btn:hover {
+  background: #d6494d;
+}
+
+.slide .btn:active {
+  background: #b63538;
+}
+
+
+.slide:nth-child(1) {
+  background-image: url("../img/slidercomputer.png");
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slidercalc.png");
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/sliderrobot.png");
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  left: 0;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(2),
+#btn-1:checked ~ .slides .slide:nth-child(3) {
+  left: 880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  left: 0;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(3) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(1) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(2) {
+  left: -880px;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  left: 0;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 
 .services {
@@ -115,11 +276,67 @@ legend {
   padding-bottom: 80px;
 }
 
+.services .btn {
+  display: inline-block;
+  text-align: center;
+  width: 140px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.services p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.services-websites a {
+  background: #fb565a;
+}
+
+.services-websites a:hover {
+  background: #d6494d;
+}
+
+.services-websites a:active {
+  background: #b63538;
+}
+
+.services-apps a {
+  background: #00ca74;
+}
+
+.services-apps a:hover {
+  background: #01a25e;
+}
+
+.services-apps a:active {
+  background: #009053;
+}
+
+.services-pres a {
+  background: #efc84a;
+}
+
+.services-pres a:hover {
+  background: #d6ae2c;
+}
+
+.services-pres a:active {
+  background: #c09b24;
+}
+
+
+
 .service {
   float: left;
   width: 240px;
   margin-right: 80px;
-  background: lightgreen;
 }
 
 .service:last-child {
@@ -136,11 +353,6 @@ aside {
   font-size: 0px;
 }
 
-.sort-catalog-list li {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .sort-catalog {
   display: inline-block;
   vertical-align: top;
@@ -151,6 +363,14 @@ aside {
 .sort-catalog li {
   display: inline-block;
   vertical-align: top;
+}
+
+.sort-catalog a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .sort {
@@ -231,12 +451,38 @@ aside {
 .pagination li {
   display: inline-block;
   vertical-align: top;
-  background: lightgrey;
 }
+
+.pagination a {
+  width: 38px;
+  min-height: 38px;
+  background: #f1f1f1;
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 15px ;
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background: #e5e5e5;
+}
+
+.pagination a:active {
+  background: #d5d5d5;
+}
+
 
 .partners {
   width: 880px;
   font-size: 0px;
+  padding-bottom: 120px;
+}
+
+.partner-logo:active {
+  color: #000000;
 }
 
 .partner-logo {
@@ -244,7 +490,6 @@ aside {
   vertical-align: top;
   width: 210px;
   margin-right:115px;
-  background: lightgrey;
 }
 .partner-logo:last-child{
   margin-right: 0px;
@@ -257,13 +502,59 @@ footer {
 }
 
 .map {
-height: 416px;
+  height: 416px;
+  background: url("../img/map.jpg") no-repeat top;
 }
 
 .contacts {
-  float: left;
+  position: relative;
+  top: 90px;
+  left: 160px;
   width: 250px;
   min-height: 240px;
+  background: white;
+}
+
+.contacts a {
+  position: absolute;
+  left: 24px;
+  bottom: 25px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 4px;
+  background: #fb565a;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px 50px;
+}
+
+.contacts a:hover {
+  background: #d6494d;
+}
+
+.contacts a:active {
+  background: #b63538;
+}
+
+
+.contacts h2 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.contacts p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .social-links {
@@ -273,16 +564,41 @@ height: 416px;
   padding-top: 70px;
 }
 
+.social-btn{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #e1e1e1;
+  border-radius: 50%;
+}
+
+.social-btn:hover {
+  background: #fb565a;
+}
+
+.social-btn:active {
+  background: #d6494d;
+}
+
+
 .promo-text {
   float: left;
   width: 570px;
   padding-bottom: 70px;
   padding-top: 70px;
-  background: lightgreen;
   text-align: left;
 }
 
+.promo-text b {
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 70px;
+}
 
+.promo-text span {
+  font-size: 16px;
+  line-height: 22px;
+}
 
 .clearfix::after {
   content: "";
