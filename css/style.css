@@ -295,6 +295,20 @@ legend {
   line-height: 22px;
 }
 
+.services h2 {
+  margin-top: 30px;
+}
+
+.services-apps h2 {
+  padding-left: 20px;
+}
+
+.services-apps p {
+  text-align: left;
+  padding-left: 20px;
+}
+
+
 .services-websites a {
   background: #fb565a;
 }
@@ -330,8 +344,6 @@ legend {
 .services-pres a:active {
   background: #c09b24;
 }
-
-
 
 .service {
   float: left;
@@ -388,7 +400,6 @@ aside {
 .catalog-container {
   float: right;
   width: 560px;
-  background: green;
 }
 
 .catalog {
@@ -398,7 +409,7 @@ aside {
 .catalog-list {
   float: right;
   width: 560px;
-  background: lightgreen;
+  background: lightgrey;
 }
 
 .catalog-item {
@@ -418,7 +429,7 @@ aside {
 }
 
 .main-content {
-  background: lightgreen;
+  background: lightgrey;
   padding-bottom: 70px;
   padding-top: 55px;
 }
@@ -427,13 +438,13 @@ aside {
 .index-content-left {
   float: left;
   width: 620px;
-  background: lightgreen;
+  background: lightgrey;
 }
 
 .index-content-right {
   float: right;
   width: 240px;
-  background: lightgreen;
+  background: lightgrey;
 }
 
 
@@ -479,6 +490,8 @@ aside {
   width: 880px;
   font-size: 0px;
   padding-bottom: 120px;
+  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
 }
 
 .partner-logo:active {
@@ -570,6 +583,7 @@ footer {
   height: 60px;
   background: #e1e1e1;
   border-radius: 50%;
+  margin-right: 28px;
 }
 
 .social-btn:hover {
