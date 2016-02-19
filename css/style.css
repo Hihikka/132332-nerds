@@ -38,6 +38,7 @@ legend {
   font-size: 18px;
   font-weight:normal;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .container{
@@ -69,7 +70,8 @@ legend {
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 75px;
+  padding-bottom: 80px;
+  padding-top: 20px;
 }
 
 .index-menu {
@@ -280,9 +282,11 @@ legend {
   background: #c1c1c1;
 }
 
+
 .range-filter {
   width: 240px;
-  margin: 50px auto; /* для демонстрации */
+  margin-top: 12px;
+  margin-bottom: 50px;
 }
 
 .range-controls {
@@ -321,15 +325,16 @@ legend {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 20px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .price-controls {
   font-size: 0;
+  text-transform: uppercase;
 }
 
 .price-controls label {
@@ -347,15 +352,36 @@ legend {
   font-size: 16px;
   width: 60px;
   margin-left: 10px;
-  padding: 8px 10px;
+  padding: 9px 10px;
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   outline: none;
   background: #f1f1f1;
 }
 
+fieldset input {
+  display: inline-block;
+  vertical-align: top;
+  width: 185px;
+  padding-left: 30px;
+}
+
+.submit-btn {
+  font-size: 12px;
+  line-height: 18px;
+  color: black;
+  text-transform: uppercase;
+  background: #f1f1f1;
+  border: none;
+  padding: 10px 48px;
+  border-radius: 4px;
+}
+
+.submit-btn:hover {
+  background: #e5e5e5;
+}
 
 
 
@@ -442,7 +468,6 @@ legend {
 aside {
   float:left;
   width: 240px;
-  background: lightgreen;
 }
 
 .catalog-conteiner {
@@ -569,8 +594,20 @@ aside {
 }
 
 .main-content li {
+  position: relative;
   padding-top: 20px;
   list-style: none;
+}
+
+.main-content li::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: -35px;
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: red;
 }
 
 
@@ -605,12 +642,34 @@ aside {
 
 
 .since {
+  position: relative;
   display: block;
   width: 90px;
   padding-left: 50px;
   padding-top: 25px;
 }
 
+.since::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: 10px;
+  display: block;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+
+.since::before {
+  content: "";
+  position: absolute;
+  right: -75px;
+  bottom: 10px;
+  display: block;
+  width: 65px;
+  height: 2px;
+  background-color: #eeeeee;
+}
 
 .right-content-list {
 }
