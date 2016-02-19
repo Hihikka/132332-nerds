@@ -368,6 +368,10 @@ fieldset input {
   padding-left: 30px;
 }
 
+fieldset {
+border: none;
+}
+
 .submit-btn {
   font-size: 12px;
   line-height: 18px;
@@ -383,6 +387,10 @@ fieldset input {
   background: #e5e5e5;
 }
 
+.submit-btn:active {
+  box-shadow: 0 -5px 0 0 #b5b5b5;
+  background: #d5d5d5;
+}
 
 
 
@@ -477,13 +485,14 @@ aside {
 .sort-catalog {
   display: inline-block;
   vertical-align: top;
-  background: grey;
   font-size: 16px;
+  margin-top: 0px;
 }
 
 .sort-catalog li {
   display: inline-block;
   vertical-align: top;
+  padding-right: 40px;
 }
 
 .sort-catalog a {
@@ -491,7 +500,18 @@ aside {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #b2b2b2;
+  border-bottom: 2px #00ca74 dotted;
+}
+
+.sort-catalog a:hover {
+  border-bottom: 2px #00ca74 solid;
+  color:black;
+}
+
+.sort-catalog a:active {
+  border:none;
+  color:black;
 }
 
 .sort-catalog-list span {
@@ -503,13 +523,12 @@ aside {
 .sort {
   display: inline-block;
   vertical-align: top;
-  background: lightgreen;
 }
 
 .sort-up-down {
   display: inline-block;
   vertical-align: top;
-  background: lightgreen;
+  margin-top: 0px;
 }
 
 .catalog-container {
@@ -524,7 +543,6 @@ aside {
 .catalog-list {
   float: right;
   width: 560px;
-  background: lightgrey;
 }
 
 .catalog-item {
@@ -705,6 +723,7 @@ aside {
 
 .pagination a:active {
   background: #d5d5d5;
+  box-shadow: 0 -3px 0 0 #b5b5b5;
 }
 
 a .current {
