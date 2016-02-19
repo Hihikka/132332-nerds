@@ -18,9 +18,9 @@ h1 {
 h2 {
   font-family: "Roboto", "Verdana", sans-serif;
   color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   font-weight:normal;
-  line-height: 30px;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -59,7 +59,9 @@ legend {
 
 .main-navigation {
   float: left;
-  width: 560px;
+  width: 500px;
+  padding-left: 100px;
+  padding-bottom: 30px;
 }
 
 .catalog-title {
@@ -74,19 +76,24 @@ legend {
   display: inline-block;
   vertical-align: top;
   text-align: right;
-  width: 100px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  padding-right: 45px;
+  margin-top: 35px;
   font-size: 0px;
 }
 
+.index-menu:nth-last-child {
+  padding-right: 0px;
+}
+
 .main-navigation a {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   color:#283136;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
+  text-align: right;
 }
 
 .main-navigation a:hover {
@@ -99,13 +106,13 @@ legend {
 
 .user-block{
   float: right;
-  width: 130px;
+  width: 100px;
 }
 
 
 .cart {
-  width: 130px;
-  margin-top: 55px;
+  width: 100px;
+  margin-top: 50px;
   margin-bottom: 15px;
   display: block;
   color:#283136;
@@ -113,6 +120,7 @@ legend {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
+  text-align: right;
 }
 
 .cart:hover {
@@ -154,12 +162,12 @@ legend {
 
 .slider-controls {
   position: absolute;
-  bottom: 95px;
+  bottom: 85px;
   left: 50%;
   z-index: 10;
 
   width: 200px;
-  margin-left: -100px;
+  margin-left: -110px;
 
   text-align: center;
 }
@@ -198,8 +206,8 @@ legend {
 .slide .btn {
   display: inline-block;
   width: 220px;
-  margin-top: 25px;
-  padding: 12px 10px;
+  margin-top: 10px;
+  padding: 9px 9px;
 
   font-weight: 300;
   font-size: 12px;
@@ -363,14 +371,15 @@ legend {
   display: inline-block;
   text-align: center;
   width: 140px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
 .services p {
@@ -379,16 +388,8 @@ legend {
 }
 
 .services h2 {
-  margin-top: 30px;
-}
-
-.services-apps h2 {
-  padding-left: 20px;
-}
-
-.services-apps p {
-  text-align: left;
-  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 
@@ -519,6 +520,7 @@ aside {
 }
 
 .item-description {
+  display: block;
   width: 200px;
   height: 200px;
   background: white;
@@ -559,29 +561,58 @@ aside {
 }
 
 
-
 .main-content {
-  padding-bottom: 70px;
-  padding-top: 55px;
+  width: 880px;
+  padding-bottom: 30px;
+  padding-top: 46px;
+  border-top: 2px solid #eeeeee;
 }
 
+.main-content li {
+  padding-top: 20px;
+  list-style: none;
+}
 
 
 .index-content-left {
   float: left;
-  width: 620px;
-
+  width: 580px;
 }
+
+.index-content-left p {
+  padding-top: 0px;
+}
+
+.index-content-left h2 {
+  padding-top: 25px;
+  margin: 0px;
+}
+
+.index-content-logo {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
 
 .index-content-right {
   float: right;
   width: 240px;
+}
 
+.index-content-right h2 {
+  padding-top: 60px;
+}
+
+
+.since {
+  display: block;
+  width: 90px;
+  padding-left: 50px;
+  padding-top: 25px;
 }
 
 
 .right-content-list {
-  margin-bottom: 70px;
 }
 
 .pagination {
@@ -617,14 +648,15 @@ aside {
   background: #d5d5d5;
 }
 
- .current {
-  background: #ffffff;
+a .current {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 
 .partners {
   width: 880px;
   font-size: 0px;
-  padding-bottom: 120px;
+  padding-bottom: 30px;
   border-bottom: 2px solid #eeeeee;
   border-top: 2px solid #eeeeee;
 }
@@ -643,6 +675,19 @@ aside {
   margin-right: 0px;
 }
 
+.partner-logo .glukhanko {
+  padding-top: 65px;
+}
+
+.partner-logo .htmlacademy {
+  padding-top: 55px;
+}
+
+.partner-logo .barbershop {
+  padding-top: 42px;
+}
+
+
 footer {
 }
 
@@ -650,6 +695,7 @@ footer {
 }
 
 .map {
+  margin-top: 85px;
   height: 416px;
   background: url("../img/map.jpg") no-repeat top;
 }
@@ -657,7 +703,7 @@ footer {
 .contacts {
   position: relative;
   top: 90px;
-  left: 160px;
+  left: 270px;
   width: 250px;
   min-height: 240px;
   background: white;
@@ -676,7 +722,7 @@ footer {
   background: #fb565a;
   font-size: 12px;
   line-height: 18px;
-  padding: 10px 50px;
+  padding: 10px 52px;
 }
 
 .contacts a:hover {
@@ -693,23 +739,25 @@ footer {
   vertical-align: top;
   font-size: 16px;
   line-height: 30px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 20px;
 }
 
 .contacts p {
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 20px;
   color: #666666;
-  margin-left: 20px;
-  text-align: center;
+  padding-left: 20px;
+  margin-top: 0px;
 }
 
 .social-links {
   float: left;
   width:310px;
   padding-bottom: 70px;
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .social-btn{
@@ -732,21 +780,28 @@ footer {
 
 .promo-text {
   float: left;
-  width: 570px;
+  width: 550px;
   padding-bottom: 70px;
-  padding-top: 70px;
+  padding-top: 76px;
+  padding-left: 13px;
   text-align: left;
 }
 
 .promo-text b {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 70px;
+  padding-bottom: 12px;
 }
 
 .promo-text span {
+  display: inline-block;
+  vertical-align: top;
   font-size: 16px;
   line-height: 22px;
+  text-align: left;
 }
 
 .clearfix::after {
