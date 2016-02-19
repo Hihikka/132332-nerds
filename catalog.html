@@ -32,44 +32,59 @@
         <div class="user-block">
           <a class="cart" href="#">Корзина</a>
         </div>
-        </div>
-        <h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+      <h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
     </header>
 
     <div class="catalog container clearfix">
 
       <aside class="catalog-form clearfix">
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <!--    Вот эта красивенькая полоска    -->
-            <div class="range">
-              <div class="scale"> <!-- Серенькая полоска -->
-                <div class="bar"></div> <!-- Зеленая полоска -->
+        <!--<form action="#" method="post">
+<fieldset>
+<legend>Стоимость</legend>
+
+<div class="range">
+<div class="scale">
+<div class="bar"></div>
+</div>
+
+<div class="toggle toggle-min"></div>
+<div class="toggle toggle-max"></div>
+</div>
+
+<label for="form-from-field">От</label>
+<input type="text" name="text-form-from" id="form-from-field">
+<label for="form-to-field">До</label>
+<input type="text" name="text-form-to" id="form-to-field">
+</fieldset> -->
+
+        <form action="form.php" method="GET">
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 20%; width: 30%"></div>
               </div>
-
-              <div class="toggle toggle-min"></div> <!-- левый кружочек -->
-              <div class="toggle toggle-max"></div> <!-- правый кружочек -->
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-
-            <label for="form-from-field">От</label>
-            <input type="text" name="text-form-from" id="form-from-field">
-            <label for="form-to-field">До</label>
-            <input type="text" name="text-form-to" id="form-to-field">
-          </fieldset>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
 
           <fieldset>
             <legend>Сетка:</legend>
-            <input type="radio" name="network" value="adapted" id="adapted-radio">
+            <input type="radio" name="network" value="adapted" id="adapted-radio" class="radio radio-adapted">
             <label for="adapted-radio">Адаптивная</label>
-            <input type="radio" name="network" value="fix" id="fix-radio">
+            <input type="radio" name="network" value="fix" id="fix-radio" class="radio radio-fix">
             <label for="fix-radio">Фиксированная</label>
-            <input type="radio" name="network" value="flex" id="flex-radio">
+            <input type="radio" name="network" value="flex" id="flex-radio" class="radio radio-flex">
             <label for="flex-radio">Резиновая</label>
           </fieldset>
+
           <fieldset>
             <legend>Особенности:</legend>
-
             <input type="checkbox" name="slider" id="sliders-field" checked>
             <label for="sliders-field">Слайдер</label>
             <input type="checkbox" name="block" id="block-field">
@@ -86,118 +101,118 @@
       </aside>
 
       <div class="catalog-container">
-      <div class="sort-catalog-list">
-        Сортировать:
-        <ul class="sort-catalog">
-          <li class="sort">
-            <a href="#" class="sort-cost">По цене</a>
-          </li>
-          <li class="sort">
-            <a href="#" class="sort-type">По типу</a>
-          </li>
-          <li class="sort">
-            <a href="#" class="sort-func">По функционалу</a>
-          </li>
-        </ul>
-
-        <ul class="sort-up-down">
-          <li class="sort">
-            <a class="sort sort-up" href="#"><img src="img/iconup.png" width="11" height="10" alt="Вверх"></a>
-          </li>
-          <li class="sort">
-            <a class="sort sort-down" href="#"><img src="img/icondown.png" width="11" height="10" alt="Вниз"></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="catalog-list">
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="sort-catalog-list">
+          <span>Сортировать:</span>
+          <ul class="sort-catalog">
+            <li class="sort">
+              <a href="#" class="sort-cost">По цене</a>
+            </li>
+            <li class="sort">
+              <a href="#" class="sort-type">По типу</a>
+            </li>
+            <li class="sort">
+              <a href="#" class="sort-func">По функционалу</a>
+            </li>
           </ul>
-          <img src="img/aviator.jpg" width="240" height="240" alt="Пример макета 1">
-          <div class="item-description">
-            <b>Aviator</b>
-            <p>Одностраничный макет с авторским дизайном</p>
-            <a class="btn" href="#">8000 р.</a>
-          </div>
+
+          <ul class="sort-up-down">
+            <li class="sort">
+              <a class="sort sort-up" href="#"><img src="img/iconup.png" width="11" height="10" alt="Вверх"></a>
+            </li>
+            <li class="sort">
+              <a class="sort sort-down" href="#"><img src="img/icondown.png" width="11" height="10" alt="Вниз"></a>
+            </li>
+          </ul>
         </div>
 
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <img src="img/sunset.jpg" width="240" height="240" alt="Пример макета 2">
-          <div class="item-description">
-            <b>Sunset</b>
-            <p>Интернет-магазин с личным кабинетом</p>
-            <a class="btn" href="#">10000 р.</a>
+        <div class="catalog-list">
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/aviator.jpg" width="240" height="240" alt="Пример макета 1">
+            <div class="item-description">
+              <b>Aviator</b>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a class="btn" href="#">8000 р.</a>
+            </div>
           </div>
-        </div>
 
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <img src="img/forte.jpg" width="240" height="240" alt="Пример макета 3">
-          <div class="item-description">
-            <b>Forte</b>
-            <p>Отличный макет для личного блога</p>
-            <a class="btn" href="#">5000 р.</a>
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/sunset.jpg" width="240" height="240" alt="Пример макета 2">
+            <div class="item-description">
+              <b>Sunset</b>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 р.</a>
+            </div>
           </div>
-        </div>
 
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <img src="img/modernorganic.jpg" width="240" height="240" alt="Пример макета 4">
-          <div class="item-description">
-            <b>Modern Organic Thai</b>
-            <p>Сайт для ресторана быстрого питания</p>
-            <a class="btn" href="#">12000 р.</a>
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/forte.jpg" width="240" height="240" alt="Пример макета 3">
+            <div class="item-description">
+              <b>Forte</b>
+              <p>Отличный макет для личного блога</p>
+              <a class="btn" href="#">5000 р.</a>
+            </div>
           </div>
-        </div>
 
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <img src="img/avenue.jpg" width="239" height="240" alt="Пример макета 5">
-          <div class="item-descriptionr">
-            <b>Avenue</b>
-            <p>Макет для блога о путешествиях</p>
-            <a class="btn" href="#">8000 р.</a>
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/modernorganic.jpg" width="240" height="240" alt="Пример макета 4">
+            <div class="item-description">
+              <b>Modern Organic Thai</b>
+              <p>Сайт для ресторана быстрого питания</p>
+              <a class="btn" href="#">12000 р.</a>
+            </div>
           </div>
-        </div>
 
-        <div class="catalog-item">
-          <ul class="catalog-item-list">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <img src="img/dovetail.jpg" width="239" height="240" alt="Пример макета 6">
-          <div class="item-description">
-            <b>Dovetail</b>
-            <p>Интернет-магазин с галереейй товаров</p>
-            <a class="btn" href="#">14000 р.</a>
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/avenue.jpg" width="239" height="240" alt="Пример макета 5">
+            <div class="item-description">
+              <b>Avenue</b>
+              <p>Макет для блога о путешествиях</p>
+              <a class="btn" href="#">8000 р.</a>
+            </div>
           </div>
-        </div>
+
+          <div class="catalog-item">
+            <ul class="catalog-item-list">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="img/dovetail.jpg" width="239" height="240" alt="Пример макета 6">
+            <div class="item-description">
+              <b>Dovetail</b>
+              <p>Интернет-магазин с галереейй товаров</p>
+              <a class="btn" href="#">14000 р.</a>
+            </div>
+          </div>
         </div>
 
         <ul class="pagination">
-          <li class="active"> <a class="btn" href="#">1</a>
+          <li class="current"> <a class="btn" href="#">1</a>
           </li>
           <li> <a class="btn" href="#">2</a>
           </li>
@@ -215,7 +230,7 @@
 
         <div class="contacts">
           <h2>NЁRDS DESIGN STUDIO</h2>
-          <p class="contacs-adress"> 191186, Санкт-Петербург, ул. Б. Конюшенная д.19/8 </p>
+          <p class="contacs-adress"> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная д.19/8 </p>
           <p class="contacs-tel">тел. +7(812)275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
