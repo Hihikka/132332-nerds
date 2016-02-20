@@ -78,7 +78,7 @@ legend {
   display: inline-block;
   vertical-align: top;
   text-align: right;
-  padding-right: 45px;
+  padding-left: 40px;
   margin-top: 35px;
   font-size: 0px;
 }
@@ -95,7 +95,7 @@ legend {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
-  text-align: right;
+  text-align: center;
 }
 
 .main-navigation a:hover {
@@ -487,6 +487,7 @@ aside {
   vertical-align: top;
   font-size: 16px;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .sort-catalog li {
@@ -551,6 +552,15 @@ aside {
   position: relative;
   width: 240px;
   min-height: 270px;
+  margin-top: 50px;
+}
+
+.catalog-item:nth-child(1) {
+  margin-top: 0px;
+}
+
+.catalog-item:nth-child(2) {
+  margin-top: 0px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -562,22 +572,77 @@ aside {
   vertical-align: top;
 }
 
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 25px;
+  display: block;
+  width: 240px;
+  height: 30px;
+  background: #f1f1f1;
+  border-top: 0px;
+  border-radius: 2px;
+}
+
+.catalog-item:hover::before {
+  background: #797979;
+}
+
+.catalog-item li::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 35px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  padding-left: 0px;
+}
+
+
+
+
 .item-description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   display: block;
   width: 200px;
   height: 200px;
   background: white;
 }
 
-.item-description b {
+.item-description span {
+  text-align: center;
+  padding-left: 65px;
+  padding-top: 35px;
   font-size: 18px;
   line-height: 8.5px;
   text-transform: uppercase;
+  margin-top: 0px;
 }
 
 .item-description p {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  padding-left: 20px;
 
 }
+
+.item-description:hover {
+  position: absolute;
+  display: block;
+  bottom: 20px;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background: white;
+}
+
 
 .item-description a {
   text-align: center;
@@ -590,8 +655,6 @@ aside {
   color: #ffffff;
   background: #fb565a;
   border-radius: 3px;
-  margin-bottom: 30px;
-  margin-left: 20px;
 }
 
 
@@ -695,8 +758,9 @@ aside {
 .pagination {
   display: inline-block;
   width: 320px;
-  margin-top: 75px;
+  margin-top: 80px;
   margin-bottom: 70px;
+  margin-left: -50px;
 }
 
 .pagination li {
@@ -713,8 +777,9 @@ aside {
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 13px 15px ;
+  padding: 11px 15px ;
   border-radius: 4px;
+  margin-left: 8px;
 }
 
 .pagination a:hover {
@@ -726,10 +791,26 @@ aside {
   box-shadow: 0 -3px 0 0 #b5b5b5;
 }
 
-a .current {
-  background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+.pagination .next {
+  padding: 12px 30px;
 }
+
+.pagination .disabled {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.pagination .disabled:hover {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.pagination .disabled:active {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-shadow: none;
+}
+
 
 .partners {
   width: 880px;
@@ -829,6 +910,17 @@ footer {
   color: #666666;
   padding-left: 20px;
   margin-top: 0px;
+}
+
+.contacs-tel {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+  padding-left: 20px;
+  padding-top: 3px;
+
 }
 
 .social-links {
