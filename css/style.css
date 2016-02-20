@@ -62,8 +62,13 @@ legend {
   float: left;
   width: 500px;
   padding-left: 100px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
+
+.main-navigation .active {
+  border-bottom: 2px solid red;
+}
+
 
 .catalog-title {
   width: 670px;
@@ -228,6 +233,7 @@ legend {
 
 .slide .btn:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 
@@ -309,6 +315,7 @@ legend {
   width: 70%;
   height: 2px;
   background: #00ca74;
+  margin-left: 0px;
 }
 
 .range-controls .toggle {
@@ -388,10 +395,17 @@ border: none;
 }
 
 .submit-btn:active {
-  box-shadow: 0 -5px 0 0 #b5b5b5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
   background: #d5d5d5;
 }
 
+.form-group input {
+  display: none;
+}
+
+.form-group label {
+  display: block;
+}
 
 
 
@@ -437,6 +451,7 @@ border: none;
 
 .services-websites a:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 .services-apps a {
@@ -449,6 +464,7 @@ border: none;
 
 .services-apps a:active {
   background: #009053;
+  box-shadow: inset 0 3px 0 0 #007b47;
 }
 
 .services-pres a {
@@ -461,6 +477,7 @@ border: none;
 
 .services-pres a:active {
   background: #c09b24;
+  box-shadow: inset 0 3px 0 0 #a3841f;
 }
 
 .service {
@@ -502,11 +519,11 @@ aside {
   font-size: 12px;
   line-height: 18px;
   color: #b2b2b2;
-  border-bottom: 2px #00ca74 dotted;
+  border-bottom: 1px #00ca74 dotted;
 }
 
 .sort-catalog a:hover {
-  border-bottom: 2px #00ca74 solid;
+  border-bottom: 1px #00ca74 solid;
   color:black;
 }
 
@@ -570,81 +587,75 @@ aside {
 .catalog-item-list li {
   display: inline-block;
   vertical-align: top;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 100%;
+  margin-right: 5px;
 }
 
-.catalog-item::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 25px;
-  display: block;
-  width: 240px;
-  height: 30px;
-  background: #f1f1f1;
-  border-top: 0px;
-  border-radius: 2px;
-}
-
-.catalog-item:hover::before {
+.catalog-item:hover .catalog-item-list {
   background: #797979;
 }
 
-.catalog-item li::before {
-  content: "";
-  position: absolute;
-  left: 12px;
-  top: 35px;
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  padding-left: 0px;
+.catalog-item-list {
+  width: 230px;
+  height: 20px;
+  background: #f1f1f1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0px;
+  padding-left: 10px;
+  font-size: 0px;
 }
-
-
 
 
 .item-description {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 20px;
-  display: block;
-  width: 200px;
-  height: 200px;
+  display: none;
+  width: 160px;
+  min-height: 160px;
+  padding-top: 36px;
+  padding: 20px;
   background: white;
+  text-align: center;
 }
 
-.item-description span {
+.item-description a {
   text-align: center;
-  padding-left: 65px;
-  padding-top: 35px;
   font-size: 18px;
-  line-height: 8.5px;
+  line-height: 22px;
   text-transform: uppercase;
-  margin-top: 0px;
+  text-decoration: none;
+  color: black;
 }
 
 .item-description p {
+  display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  padding-left: 20px;
+  padding-bottom: 30px;
 
 }
 
-.item-description:hover {
+.catalog-item:hover .item-description {
   position: absolute;
   display: block;
-  bottom: 20px;
+  bottom: 25px;
   left: 20px;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  min-height: 160px;
   background: white;
 }
 
 
-.item-description a {
+.item-description .btn {
   text-align: center;
   width: 140px;
   padding: 10px 30px;
@@ -658,11 +669,11 @@ aside {
 }
 
 
-.item-description a:hover {
+.item-description .btn:hover {
   background: #d6494d;
 }
 
-.item-description a:active {
+.item-description .btn:active {
   background: #b63538;
 }
 
@@ -788,7 +799,7 @@ aside {
 
 .pagination a:active {
   background: #d5d5d5;
-  box-shadow: 0 -3px 0 0 #b5b5b5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 
 .pagination .next {
@@ -856,13 +867,14 @@ footer {
 .map {
   margin-top: 85px;
   height: 416px;
-  background: url("../img/map.jpg") no-repeat top;
+  background: #e9e5dc url("../img/map.jpg") no-repeat top;
 }
 
 .contacts {
   position: relative;
   top: 90px;
-  left: 270px;
+  left: 50%;
+  transform: translateX(-440px);
   width: 250px;
   min-height: 240px;
   background: white;
@@ -890,6 +902,7 @@ footer {
 
 .contacts a:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 
@@ -945,6 +958,7 @@ footer {
 
 .social-btn:active {
   background: #d6494d;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
 
