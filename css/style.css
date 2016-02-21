@@ -47,29 +47,9 @@ body {
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 
-.social-links span {;
-  font-size: 23px;
-  line-height: 16px;
-  color: darkseagreen;
-}
 
 .social-links .icon-vk {
 
-}
-
-
-.form-group .icon-circle {
-  font-size: 28px;
-  line-height: 20px;
-  color: #c1c1c1;
-  padding-right: 5px;
-}
-
-.form-group .icon-check-off {
-  font-size: 28px;
-  line-height: 20px;
-  color: #c1c1c1;
-  padding-right: 5px;
 }
 
 
@@ -94,14 +74,12 @@ body {
 .icon-arrow .icon-down-dir {
   font-size: 23px;
   line-height: 20px;
-  margin-left: 20px;
   padding: 0px;
 }
 
 .icon-arrow .icon-up-dir {
   font-size: 23px;
   line-height: 20px;
-  margin-left: -20px;
   margin-right: 0px;
   padding: 0px;
 }
@@ -116,11 +94,6 @@ body {
 .user-block .icon-basket:active {
   color: #cbcbcb;
 }
-
-.user-block .icon-basket:hover {
-  color: #fb565a;
-}
-
 
 h1 {
   font-family: "Roboto", "Verdana", sans-serif;
@@ -244,7 +217,11 @@ legend {
   text-align: right;
 }
 
-.user-block a:hover {
+.cart:hover .icon-basket {
+  color: #fb565a;
+}
+
+.cart:hover {
   color: #fb565a;
 }
 
@@ -491,10 +468,11 @@ fieldset input {
 
 fieldset {
   border: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 fieldset .form-group {
-  margin-left: -20px;
 }
 
 .submit-btn {
@@ -517,6 +495,59 @@ fieldset .form-group {
   box-shadow: inset 0 3px 0 0 #b5b5b5;
   background: #d5d5d5;
 }
+
+.form-group input[type="radio"] + label::before {
+  content: "\25cb";
+  margin-right: 10px;
+  font-family: "symbols-nerds";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  opacity: 0.2;
+}
+
+.form-group input[type="radio"]:checked + label::before {
+  content: "\25cf";
+}
+
+.form-group label:hover {
+  color: #000;
+}
+
+.form-group input[type="checkbox"] + label::before {
+  content: "\2610";
+  margin-right: 10px;
+  font-family: "symbols-nerds";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  opacity: 0.2;
+}
+
+.form-group input[type="checkbox"]:checked + label::before {
+  content: "\2611";
+  margin-right: 6px;
+}
+
+.form-group input[type="checkbox"]:disabled + label::before {
+  content: "\2610";
+  margin-right: 10px;
+  font-family: "symbols-nerds";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  opacity: 0.1;
+}
+
+.form-group input[type="checkbox"]:checked:disabled + label::before {
+  content: "\2611";
+  margin-right: 6px;
+  opacity: 0.1;
+}
+
 
 .form-group input {
   display: none;
@@ -1076,13 +1107,20 @@ footer {
   padding-top: 80px;
 }
 
-.social-btn{
+.social-btn {
   display: inline-block;
   width: 60px;
   height: 60px;
   background: #e1e1e1;
   border-radius: 50%;
   margin-right: 28px;
+  text-align: center;
+}
+
+.social-btn span {
+  font-size: 23px;
+  line-height: 60px;
+  color: white;
 }
 
 .social-btn:hover {
