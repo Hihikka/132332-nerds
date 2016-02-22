@@ -48,10 +48,12 @@ function initialize() {
 }
   var map = new google.maps.Map(document.getElementById("canvas-map"),
                                 mapOptions);
-  var myLatLng = new google.maps.LatLng(59.9387942,30.3208893);
+  var image = "img/nerdsmap.png";
+  var myLatLng = new google.maps.LatLng(59.9387942,30.3236893);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
+    icon: image
 });
 }
 

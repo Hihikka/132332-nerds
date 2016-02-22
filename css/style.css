@@ -1025,7 +1025,7 @@ aside {
 }
 
 .contacts {
-  position: relative;
+  position: absolute;
   top: 87px;
   left: 50%;
   transform: translateX(-440px);
@@ -1035,9 +1035,6 @@ aside {
 }
 
 .contacts a {
-  position: absolute;
-  left: 24px;
-  bottom: 25px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -1048,6 +1045,8 @@ aside {
   font-size: 12px;
   line-height: 18px;
   padding: 10px 52px;
+  margin-left: 20px;
+
 }
 
 .contacts a:hover {
