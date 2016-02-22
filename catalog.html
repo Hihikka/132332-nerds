@@ -233,5 +233,73 @@
       </div>
     </footer>
 
+        <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="mail-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="contacts--form clearfix">
+          <fieldset class="form-column-left">
+            <label for="name-field">Ваше имя:</label>
+            <input class="contact-form" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+          </fieldset>
+          <fieldset class="form-column-right">
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="contact-form" type="text" name="email" id="email-field" placeholder="Для отправки ответа">
+          </fieldset>
+        </div>
+
+        <label for="text-field" class="textarea-label">Текст письма:</label>
+        <textarea class="text-form" type="text" name="text" id="text-field" placeholder="В свободной форме">
+        </textarea>
+
+        <button class="btn" type="submit">Отправить</button>
+
+      </form>
+
+           <script>
+
+      var link = document.querySelector(".contact-us");
+
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=email]");
+      var text = popup.querySelector("[name=text]");
+
+      var storage = localStorage.getItem("contact-us");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!email.value || !text.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("contact-us", login.value);
+        }
+      });
+
+    </script>
+
   </body>
 </html>

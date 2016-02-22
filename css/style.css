@@ -1174,6 +1174,7 @@ aside {
   position: absolute;
   top: 1700px;
   left: 50%;
+  display: none;
 
   width: 470px;
   margin-left: -230px;
@@ -1251,6 +1252,11 @@ aside {
   padding-left: 12px;
 }
 
+.modal-content input {
+  padding-left: 12px;
+}
+
+
 textarea {
   width: 460px;
   resize: none;
@@ -1322,8 +1328,9 @@ textarea {
   outline: none;
 }
 
-
-
+.modal-content-show {
+  display: block;
+}
 
 
 .clearfix::after {
@@ -1331,3 +1338,5 @@ textarea {
   display: table;
   clear: both;
 }
+
+
