@@ -8,7 +8,7 @@ var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 var text = popup.querySelector("[name=text]");
 
-var storage = localStorage.getItem("contact-us");
+var storage = localStorage.getItem("name");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -46,7 +46,7 @@ function initialize() {
     zoom: 17,
     center: new google.maps.LatLng(59.9387942,30.3208893)
 }
-  var map = new google.maps.Map(document.getElementById("map-canvas"),
+  var map = new google.maps.Map(document.getElementById("canvas-map"),
                                 mapOptions);
   var myLatLng = new google.maps.LatLng(59.9387942,30.3208893);
   var beachMarker = new google.maps.Marker({

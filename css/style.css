@@ -31,7 +31,6 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
@@ -46,12 +45,6 @@ body {
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
-
-
-.social-links .icon-vk {
-
-}
-
 
 .icon-arrow {
   color: #c1c1c1;
@@ -204,7 +197,6 @@ legend {
   width: 100px;
 }
 
-
 .cart {
   width: 100px;
   margin-top: 50px;
@@ -264,10 +256,8 @@ legend {
   bottom: 85px;
   left: 50%;
   z-index: 10;
-
   width: 200px;
   margin-left: -110px;
-
   text-align: center;
 }
 
@@ -276,9 +266,7 @@ legend {
   width: 4px;
   height: 4px;
   margin: 0 3px;
-
   vertical-align: top;
-
   background: #ffffff;
   border: 3px solid white;
   border-radius: 50%;
@@ -307,7 +295,6 @@ legend {
   width: 220px;
   margin-top: 10px;
   padding: 9px 9px;
-
   font-weight: 300;
   font-size: 12px;
   text-align: center;
@@ -327,7 +314,6 @@ legend {
   background: #b63538;
   box-shadow: inset 0 3px 0 0 #9b2d30;
 }
-
 
 .slide:nth-child(1) {
   background-image: url("../img/slidercomputer.png");
@@ -379,7 +365,6 @@ legend {
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
   background: #c1c1c1;
 }
-
 
 .range-filter {
   width: 240px;
@@ -574,7 +559,6 @@ fieldset {
   padding-bottom: 16px;
 }
 
-
 .services {
   width: 880px;
   padding-top: 80px;
@@ -605,7 +589,6 @@ fieldset {
   font-size: 18px;
   line-height: 30px;
 }
-
 
 .services-websites a {
   background: #fb565a;
@@ -781,7 +764,6 @@ aside {
   font-size: 0px;
 }
 
-
 .item-description {
   position: absolute;
   bottom: 25px;
@@ -794,7 +776,6 @@ aside {
   background: white;
   text-align: center;
 }
-
 
 .item-description p {
   display: inline-block;
@@ -839,7 +820,6 @@ aside {
   padding-top: 40px;
 }
 
-
 .item-description .btn:hover {
   background: #d6494d;
 }
@@ -847,7 +827,6 @@ aside {
 .item-description .btn:active {
   background: #b63538;
 }
-
 
 .main-content {
   width: 880px;
@@ -873,7 +852,6 @@ aside {
   background-color: red;
 }
 
-
 .index-content-left {
   float: left;
   width: 580px;
@@ -893,7 +871,6 @@ aside {
   padding-left: 30px;
 }
 
-
 .index-content-right {
   float: right;
   width: 240px;
@@ -902,7 +879,6 @@ aside {
 .index-content-right h2 {
   padding-top: 50px;
 }
-
 
 .since {
   position: relative;
@@ -992,7 +968,6 @@ aside {
   box-shadow: none;
 }
 
-
 .partners {
   width: 880px;
   font-size: 0px;
@@ -1033,7 +1008,6 @@ aside {
   padding-top: 42px;
 }
 
-
 .main-footer map {
   margin-top: 0;
 }
@@ -1045,7 +1019,7 @@ aside {
   background: #e9e5dc url("../img/map.jpg") no-repeat top;
 }
 
-.map-canvas {
+.canvas-map {
   width: 100%;
   height: 415px;
 }
@@ -1085,7 +1059,6 @@ aside {
   box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 
-
 .contacts h2 {
   display: inline-block;
   vertical-align: top;
@@ -1113,7 +1086,6 @@ aside {
   color: #666666;
   padding-left: 20px;
   padding-top: 3px;
-
 }
 
 .social-links {
@@ -1175,19 +1147,16 @@ aside {
   text-align: left;
 }
 
-
 .modal-content {
   position: fixed;
   top: 20%;
   left: 50%;
   display: none;
   margin-left: -235px;
-
   width: 470px;
   padding: 40px 112px 60px 55px;
   background: white;
   color: #000000;
-
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   z-index: 100;
 }
@@ -1196,11 +1165,9 @@ aside {
   position: absolute;
   top: 5px;
   right: 5px;
-
   width: 40px;
   height: 40px;
   font-size: 0;
-
   background-color: #fb565a;
   border-radius: 100%;
   border: none;
@@ -1214,7 +1181,6 @@ aside {
   position: absolute;
   top: 17px;
   left: 8px;
-
   width: 25px;
   height: 5px;
   background-color: white;
@@ -1240,7 +1206,6 @@ aside {
   border-radius: 3px;
   border: 2px solid #d7dcde ;
   padding-left: 12px;
-
 }
 
 .modal-content .text-form {
@@ -1265,7 +1230,6 @@ aside {
   padding-left: 12px;
 }
 
-
 textarea {
   width: 460px;
   resize: none;
@@ -1284,7 +1248,6 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-
   background: #fb565a;
   border-radius: 4px;
   border: none;
@@ -1302,7 +1265,6 @@ textarea {
 
 .modal-content label {
   display: block;
-
 }
 
 .form-column-left {
@@ -1327,7 +1289,6 @@ textarea {
   border-color: #56bffb;
   outline: none;
 }
-
 
 .modal-content .text-form:hover {
   border-color: #a2a9ac;
