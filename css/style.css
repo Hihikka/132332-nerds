@@ -118,6 +118,7 @@ h2 {
   font-size: 36px;
   font-weight:normal;
   line-height: 36px;
+  margin-bottom: 0px;
 }
 
 legend {
@@ -472,7 +473,8 @@ fieldset {
   padding: 0px;
 }
 
-fieldset .form-group {
+.form-group {
+  margin-bottom: 28px;
 }
 
 .submit-btn {
@@ -548,7 +550,6 @@ fieldset .form-group {
   opacity: 0.1;
 }
 
-
 .form-group input {
   display: none;
 }
@@ -564,6 +565,15 @@ fieldset .form-group {
   margin-left: 0px;
   padding-bottom: 10px;
 }
+
+.form-group--checkbox {
+  margin-bottom: 14px;
+}
+
+.form-group--checkbox legend {
+  padding-bottom: 16px;
+}
+
 
 .services {
   width: 880px;
@@ -713,6 +723,9 @@ aside {
 
 .catalog {
   padding-top: 75px;
+  margin-bottom: 75px;
+}
+
 }
 
 .catalog-list {
@@ -838,7 +851,7 @@ aside {
 
 .main-content {
   width: 880px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   padding-top: 46px;
   border-top: 2px solid #eeeeee;
 }
@@ -871,7 +884,7 @@ aside {
 }
 
 .index-content-left h2 {
-  padding-top: 25px;
+  padding-top: 28px;
   margin: 0px;
 }
 
@@ -887,7 +900,7 @@ aside {
 }
 
 .index-content-right h2 {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 
@@ -1021,21 +1034,19 @@ aside {
 }
 
 
-footer {
-}
-
-.main-footer {
+.main-footer map {
+  margin-top: 0;
 }
 
 .map {
-  margin-top: 85px;
+  margin-top: 82px;
   height: 416px;
   background: #e9e5dc url("../img/map.jpg") no-repeat top;
 }
 
 .contacts {
   position: relative;
-  top: 90px;
+  top: 87px;
   left: 50%;
   transform: translateX(-440px);
   width: 250px;
@@ -1161,15 +1172,13 @@ footer {
 
 .modal-content {
   position: absolute;
-  top: 400px;
+  top: 1700px;
   left: 50%;
 
   width: 470px;
   margin-left: -230px;
   padding: 40px 112px 60px 55px;
   background: white;
-
-
   color: #000000;
 
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
@@ -1218,7 +1227,7 @@ footer {
 
 .modal-content .contact-form {
   width: 220px;
-  margin-top: 10px;
+  margin-top: 5px;
   min-height: 35px;
   border-radius: 3px;
   border: 2px solid #d7dcde ;
@@ -1228,7 +1237,7 @@ footer {
 .modal-content .text-form {
   display: inline-block;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 5px;
   width: 440px;
   min-height: 110px;
   border-radius: 3px;
@@ -1277,7 +1286,7 @@ textarea {
 
 .modal-content label {
   display: block;
-  min-width: 90px;
+
 }
 
 .form-column-left {
@@ -1291,7 +1300,7 @@ textarea {
 }
 
 .textarea-label {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .modal-content input:hover {
