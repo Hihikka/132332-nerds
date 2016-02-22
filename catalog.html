@@ -41,7 +41,7 @@
       <aside class="catalog-form clearfix">
 
         <form action="form.php" method="GET">
-          <legend>Стоимость:</legend>
+          <div class="form-title">Стоимость:</div>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -57,7 +57,7 @@
           </div>
 
           <fieldset class="form-group">
-            <legend>Сетка:</legend>
+            <legend class="form-title">Сетка:</legend>
             <input type="radio" name="network" value="adapted" id="adapted-radio" checked class="radio radio-adapted">
             <label for="adapted-radio">Адаптивная</label>
             <input type="radio" name="network" value="fix" id="fix-radio" class="radio radio-fix">
@@ -67,7 +67,7 @@
           </fieldset>
 
           <fieldset class="form-group form-group--checkbox">
-            <legend>Особенности:</legend>
+            <legend class="form-title">Особенности:</legend>
             <input type="checkbox" name="slider" id="sliders-field" checked class="checkbox">
             <label for="sliders-field">Слайдер</label>
             <input type="checkbox" name="block" id="block-field" class="checkbox">
@@ -209,13 +209,13 @@
 
     <footer class="main-footer">
       <div class="map">
-        <div class="canvas-map"></div>
+        <div id="canvas-map" class="canvas-map"></div>
 
         <div class="contacts">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p class="contacs-adress"> 191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 </p>
           <p class="contacs-tel">тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">Напишите нам</a>
+          <a class="btn contact-us" href="#">Напишите нам</a>
         </div>
       </div>
 
@@ -248,7 +248,7 @@
         </div>
 
         <label for="text-field" class="textarea-label">Текст письма:</label>
-        <textarea class="text-form" type="text" name="text" id="text-field" placeholder="В свободной форме">
+        <textarea class="text-form" name="text" id="text-field" placeholder="В свободной форме">
         </textarea>
 
         <button class="btn" type="submit">Отправить</button>
