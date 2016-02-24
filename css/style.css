@@ -77,14 +77,18 @@ body {
   padding: 0px;
 }
 
-.user-block .icon-basket {
+.cart::before {
   font-size: 16px;
   padding-right: 12px;
   color: #a6a6a6;
   font-weight: 500;
 }
 
-.user-block .icon-basket:active {
+.cart:hover::before {
+  color: #fb565a;
+}
+
+.cart:active::before {
   color: #cbcbcb;
 }
 
@@ -197,7 +201,7 @@ h2 {
   width: 100px;
 }
 
-.cart {
+.user-block .cart {
   width: 100px;
   margin-top: 50px;
   margin-bottom: 15px;
@@ -210,10 +214,6 @@ h2 {
   text-align: right;
 }
 
-.cart:hover .icon-basket {
-  color: #fb565a;
-}
-
 .cart:hover {
   color: #fb565a;
 }
@@ -224,7 +224,6 @@ h2 {
 
 .slider {
   position: relative;
-
   width: 880px;
   min-height: 310px;
   margin: 0 auto;
@@ -232,12 +231,9 @@ h2 {
 }
 
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-
   width: 100%;
-  height: 310px;
+  min-height: 310px;
+  display: none;
 
   background-repeat: no-repeat;
   background-position: 100% 10px;
@@ -327,36 +323,15 @@ h2 {
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-  left: 0;
-}
-
-#btn-1:checked ~ .slides .slide:nth-child(2),
-#btn-1:checked ~ .slides .slide:nth-child(3) {
-  left: 880px;
-}
-
-#btn-2:checked ~ .slides .slide:nth-child(1) {
-  left: -880px;
+  display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-  left: 0;
-}
-
-#btn-2:checked ~ .slides .slide:nth-child(3) {
-  left: 880px;
-}
-
-#btn-3:checked ~ .slides .slide:nth-child(1) {
-  left: -880px;
-}
-
-#btn-3:checked ~ .slides .slide:nth-child(2) {
-  left: -880px;
+  display: block;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-  left: 0;
+  display: block;
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
@@ -1202,7 +1177,6 @@ aside {
 .modal-content .contacts--form {
   width: 460px;
 }
-
 
 .modal-content .contact-form {
   width: 203px;
